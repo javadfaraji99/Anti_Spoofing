@@ -1,0 +1,1089 @@
+ , 
+model number,1
+0,0.8526328206062317,0.17984099686145782,0.8626187443733215,0.2990280091762543
+1,0.8526328206062317,0.05546540394425392,0.8626187443733215,0.23301884531974792
+2,0.8526328206062317,0.03293662518262863,0.8626187443733215,0.2282092273235321
+3,0.8526328206062317,0.01615762896835804,0.8626187443733215,0.33166664838790894
+4,0.8526328206062317,0.015571525320410728,0.8626187443733215,0.29376786947250366
+best test accuracy,0.8626187443733215
+best test loss,0.2282092273235321
+elapsed time,2658.886429309845
+epochs,7
+callbacks/EarlyStopping,"{'monitor': 'val_loss', 'patience': 2}"
+callbacks/ModelCheckpoint,"{'filepath': 'model_checkpoint.keras', 'save_best_only': True, 'monitor': 'val_loss', 'verbose': 1}"
+callbacks/CSVLogger,"{'filename': 'output.csv', 'separator': ',', 'append': 'True'}"
+Layer Type, InputLayer
+Output Shape," [(None, 224, 224, 3)]"
+Number of Parameters,0
+Layer Type, ZeroPadding2D
+Output Shape," (None, 230, 230, 3)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 112, 112, 64)"
+Number of Parameters,9472
+Layer Type, BatchNormalization
+Output Shape," (None, 112, 112, 64)"
+Number of Parameters,256
+Layer Type, Activation
+Output Shape," (None, 112, 112, 64)"
+Number of Parameters,0
+Layer Type, ZeroPadding2D
+Output Shape," (None, 114, 114, 64)"
+Number of Parameters,0
+Layer Type, MaxPooling2D
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,4160
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,256
+Layer Type, Activation
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,36928
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,256
+Layer Type, Activation
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,16640
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,16640
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,1024
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,1024
+Layer Type, Add
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,16448
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,256
+Layer Type, Activation
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,36928
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,256
+Layer Type, Activation
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,16640
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,1024
+Layer Type, Add
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,16448
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,256
+Layer Type, Activation
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,36928
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,256
+Layer Type, Activation
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,16640
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,1024
+Layer Type, Add
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,32896
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,512
+Layer Type, Activation
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,147584
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,512
+Layer Type, Activation
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,131584
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,66048
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,2048
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,2048
+Layer Type, Add
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,65664
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,512
+Layer Type, Activation
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,147584
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,512
+Layer Type, Activation
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,66048
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,2048
+Layer Type, Add
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,65664
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,512
+Layer Type, Activation
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,147584
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,512
+Layer Type, Activation
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,66048
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,2048
+Layer Type, Add
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,65664
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,512
+Layer Type, Activation
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,147584
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,512
+Layer Type, Activation
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,66048
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,2048
+Layer Type, Add
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,131328
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,590080
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,525312
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,263168
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,4096
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,4096
+Layer Type, Add
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,262400
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,590080
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,263168
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,4096
+Layer Type, Add
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,262400
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,590080
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,263168
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,4096
+Layer Type, Add
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,262400
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,590080
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,263168
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,4096
+Layer Type, Add
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,262400
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,590080
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,263168
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,4096
+Layer Type, Add
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,262400
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,590080
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,263168
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,4096
+Layer Type, Add
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,524800
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2048
+Layer Type, Activation
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2359808
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2048
+Layer Type, Activation
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,2099200
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,1050624
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,8192
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,8192
+Layer Type, Add
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,1049088
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2048
+Layer Type, Activation
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2359808
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2048
+Layer Type, Activation
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,1050624
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,8192
+Layer Type, Add
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,1049088
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2048
+Layer Type, Activation
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2359808
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2048
+Layer Type, Activation
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,1050624
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,8192
+Layer Type, Add
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,0
+Layer Type, GlobalAveragePooling2D
+Output Shape," (None, 2048)"
+Number of Parameters,0
+Layer Type, Dense
+Output Shape," (None, 1024)"
+Number of Parameters,2098176
+Layer Type, Dense
+Output Shape," (None, 1)"
+Number of Parameters,1025
+best test accuracy,0.8626187443733215
+best test loss,0.2282092273235321
+elapsed time,2658.886429309845
+epochs,7
+callbacks/EarlyStopping,"{'monitor': 'val_loss', 'patience': 2}"
+callbacks/ModelCheckpoint,"{'filepath': 'model_checkpoint.keras', 'save_best_only': True, 'monitor': 'val_loss', 'verbose': 1}"
+callbacks/CSVLogger,"{'filename': 'output.csv', 'separator': ',', 'append': 'True'}"
+Layer Type, InputLayer
+Output Shape," [(None, 224, 224, 3)]"
+Number of Parameters,0
+Layer Type, ZeroPadding2D
+Output Shape," (None, 230, 230, 3)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 112, 112, 64)"
+Number of Parameters,9472
+Layer Type, BatchNormalization
+Output Shape," (None, 112, 112, 64)"
+Number of Parameters,256
+Layer Type, Activation
+Output Shape," (None, 112, 112, 64)"
+Number of Parameters,0
+Layer Type, ZeroPadding2D
+Output Shape," (None, 114, 114, 64)"
+Number of Parameters,0
+Layer Type, MaxPooling2D
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,4160
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,256
+Layer Type, Activation
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,36928
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,256
+Layer Type, Activation
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,16640
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,16640
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,1024
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,1024
+Layer Type, Add
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,16448
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,256
+Layer Type, Activation
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,36928
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,256
+Layer Type, Activation
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,16640
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,1024
+Layer Type, Add
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,16448
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,256
+Layer Type, Activation
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,36928
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,256
+Layer Type, Activation
+Output Shape," (None, 56, 56, 64)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,16640
+Layer Type, BatchNormalization
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,1024
+Layer Type, Add
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 56, 56, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,32896
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,512
+Layer Type, Activation
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,147584
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,512
+Layer Type, Activation
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,131584
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,66048
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,2048
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,2048
+Layer Type, Add
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,65664
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,512
+Layer Type, Activation
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,147584
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,512
+Layer Type, Activation
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,66048
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,2048
+Layer Type, Add
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,65664
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,512
+Layer Type, Activation
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,147584
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,512
+Layer Type, Activation
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,66048
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,2048
+Layer Type, Add
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,65664
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,512
+Layer Type, Activation
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,147584
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,512
+Layer Type, Activation
+Output Shape," (None, 28, 28, 128)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,66048
+Layer Type, BatchNormalization
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,2048
+Layer Type, Add
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 28, 28, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,131328
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,590080
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,525312
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,263168
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,4096
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,4096
+Layer Type, Add
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,262400
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,590080
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,263168
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,4096
+Layer Type, Add
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,262400
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,590080
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,263168
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,4096
+Layer Type, Add
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,262400
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,590080
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,263168
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,4096
+Layer Type, Add
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,262400
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,590080
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,263168
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,4096
+Layer Type, Add
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,262400
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,590080
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,1024
+Layer Type, Activation
+Output Shape," (None, 14, 14, 256)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,263168
+Layer Type, BatchNormalization
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,4096
+Layer Type, Add
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 14, 14, 1024)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,524800
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2048
+Layer Type, Activation
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2359808
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2048
+Layer Type, Activation
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,2099200
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,1050624
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,8192
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,8192
+Layer Type, Add
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,1049088
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2048
+Layer Type, Activation
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2359808
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2048
+Layer Type, Activation
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,1050624
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,8192
+Layer Type, Add
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,1049088
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2048
+Layer Type, Activation
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2359808
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,2048
+Layer Type, Activation
+Output Shape," (None, 7, 7, 512)"
+Number of Parameters,0
+Layer Type, Conv2D
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,1050624
+Layer Type, BatchNormalization
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,8192
+Layer Type, Add
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,0
+Layer Type, Activation
+Output Shape," (None, 7, 7, 2048)"
+Number of Parameters,0
+Layer Type, GlobalAveragePooling2D
+Output Shape," (None, 2048)"
+Number of Parameters,0
+Layer Type, Dense
+Output Shape," (None, 1024)"
+Number of Parameters,2098176
+Layer Type, Dense
+Output Shape," (None, 1)"
+Number of Parameters,1025
