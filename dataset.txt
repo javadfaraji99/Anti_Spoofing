@@ -1,0 +1,12 @@
+./Test_Videos/1_live.mp4
+./Test_Videos/1_not_live.mp4
+./Test_Videos/2_live.mp4
+./Test_Videos/2_not_live.mp4
+./Test_Videos/3_live.mp4
+./Test_Videos/3_not_live.mp4
+./Test_Videos/4_live.mp4
+./Test_Videos/4_not_live.mp4
+./Test_Videos/5_live.mp4
+./Test_Videos/5_not_live.mp4
+./Test_Videos/6_live.mp4
+./Test_Videos/6_not_live.mp4
